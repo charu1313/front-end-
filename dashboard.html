@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Wellbeing Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+
+    <!-- Header -->
+    <header>
+      <h1>Welcome, User</h1>
+      <p>Your personalized mental wellbeing dashboard</p>
+    </header>
+
+    <!-- Motivational Quotes -->
+    <div class="quote-section">
+      <p id="quote-text">“Your first wealth is your health.”</p>
+    </div>
+
+    <!-- Dashboard Cards -->
+    <div class="cards-container">
+      <div class="card mood-card">
+        <h2>Mood Tracker</h2>
+        <div class="chart-placeholder">[Mood Chart]</div>
+        <button>Log Mood</button>
+      </div>
+
+      <div class="card stress-card">
+        <h2>Stress Management</h2>
+        <div class="tools-placeholder">[Meditation Tools]</div>
+        <button>Start Exercise</button>
+      </div>
+
+      <div class="card habits-card">
+        <h2>Healthy Digital Habits</h2>
+        <div class="usage-placeholder">[Usage Stats]</div>
+        <button>View Insights</button>
+      </div>
+
+      <div class="card ai-card">
+        <h2>AI Recommendations</h2>
+        <div class="ai-feed">
+          <p>“Take a 5-min meditation break.”</p>
+          <p>“Limit social media usage to 30 minutes today.”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chatbot -->
+  <div class="chatbot" id="chatbot">
+    <div class="chatbot-header">
+      <h4>AI Wellbeing Assistant</h4>
+      <button id="close-chat">×</button>
+    </div>
+    <div class="chatbot-body" id="chatbot-body">
+      <div class="chat-message bot">Hello! How are you feeling today?</div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" placeholder="Type your message..." id="chat-input"/>
+      <button id="send-chat">Send</button>
+    </div>
+  </div>
+
+  <button id="open-chat" class="chat-toggle">💬</button>
+
+  <script src="script-dashboard.js"></script>
+</body>
+</html>
